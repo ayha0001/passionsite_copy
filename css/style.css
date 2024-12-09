@@ -1,0 +1,204 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*Hero og video indstillinger*/
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.videofront {
+  object-fit: cover;
+}
+.hero > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+.hero video {
+  height: 500;
+}
+
+/*Header, logo og footer*/
+.logo {
+  width: 100px;
+}
+
+header {
+  display: flex;
+  padding: 10px 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #5862ab;
+  height: 80px;
+}
+header a {
+  font-family: inter;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+footer {
+  background-color: #5862ab;
+  padding: 30px 50px;
+}
+.logo2 {
+  width: 130px;
+}
+footer p {
+  font-family: inter, serif;
+  color: white;
+  margin: 10px 0;
+}
+.footerflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #f3ebd5;
+}
+.textbox {
+  background-color: #fbdc77;
+}
+.galleri {
+  background-color: #fbdc77;
+}
+.videobox {
+  background-color: #fbdc77;
+}
+
+/*Font indstillinger*/
+h1 {
+  color: #393837;
+  font-family: fraunces, serif;
+  font-weight: 900;
+}
+h2 {
+  color: #393837;
+  font-family: fraunces, serif;
+  font-weight: 600;
+  text-wrap: pretty;
+}
+p {
+  color: #393837;
+  font-family: inter, serif;
+  text-wrap: pretty;
+}
+
+@media (max-width: 800px) {
+  /*Font indstillinger mobil*/
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  .egfooter {
+    display: none;
+  }
+
+  main {
+    margin: 20px;
+  }
+  .textbox {
+    padding: 20px;
+  }
+  .textbox h2 {
+    margin: 12px 0;
+  }
+  .intro {
+    margin-bottom: 50px;
+  }
+  .galleri {
+    padding: 20px;
+  }
+  .grid_1-1-1 {
+    margin: 15px 0 10px;
+  }
+  .videobox {
+    margin: 50px 0;
+    padding: 20px 20px 30px;
+  }
+  .videobox h2 {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 800px) {
+  /*Font indstillinger desktop*/
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+  main {
+    margin: 30px auto;
+    max-width: 1000px;
+  }
+  .intro {
+    margin: 78px 0;
+  }
+  .textbox {
+    padding: 20px;
+  }
+  .textbox h2 {
+    margin: 12px 0;
+  }
+  .galleri {
+    padding: 30px;
+  }
+  .grid_1-1-1 {
+    margin: 12px 0;
+  }
+  .videobox {
+    margin: 78px 0;
+    padding: 30px;
+  }
+  .videobox h2 {
+    margin: 0 0 12px;
+  }
+
+  .emilyimg {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+iframe {
+  aspect-ratio: 560/315;
+}
